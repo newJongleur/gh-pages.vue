@@ -1,15 +1,17 @@
 {
   "name": "gh-pages.vue",
-  "version": "0.0.0",
+  "version": "0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist -r https://github.com/newJongleur/gh-pages.vue.git -b gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/newJongleur/gh-pages.vue.git -b gh-pages"
   },
   "dependencies": {
-    "vue": "^3.2.38"
+    "pinia": "^2.0.25",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
