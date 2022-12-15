@@ -8,9 +8,9 @@ npm init vue
 ```sh
 npm i gh-pages -D
 ```
-## 初始化仓库，提交下代码提交后，登录Github，进入项目，选择Code，复制该项目链接，链接方式SSH或者HTTPS都可以
+## 初始化仓库，提交到公共仓后，登录Github，进入项目，选择Code，复制该项目链接，链接方式SSH或者HTTPS都可以
 ## 在“package.json”的“scripts”中添加两个脚本
-```sh
+```javascript
 "predeploy":"npm run build",
 "deploy":"gh-pages -d dist -r https://github.com/[username]/[project].git -b gh-pages"
 ```
@@ -21,7 +21,7 @@ npm i gh-pages -D
 npm run deploy
 ```
 ## 如果发布上去的页面打开时空白，则需要在vue.config.js里加上如下配置，再运行下
-```sh
+```javascript
 publicPath:'.'
 ```
 ```sh

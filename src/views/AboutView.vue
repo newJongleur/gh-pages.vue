@@ -1,7 +1,3 @@
-<script setup>
-import HelloWorld from '../components/HelloWorld.vue'
-</script>
-
 <template>
   <HelloWorld />
   <div class="about">
@@ -9,7 +5,11 @@ import HelloWorld from '../components/HelloWorld.vue'
   </div>
 </template>
 
-<style>
+<script setup>
+import HelloWorld from '../components/HelloWorld.vue'
+</script>
+
+<style scoped>
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

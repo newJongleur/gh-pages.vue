@@ -3,10 +3,8 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://cn.vitejs.dev/config/
 export default defineConfig({
-  //publicPath: env !== "development" ? "/" : "/",
-  base: './',
+  // base: './',
   plugins: [vue()],
   resolve: {
     alias: {

@@ -1,14 +1,3 @@
-<script setup>
-import { RouterLink } from 'vue-router'
-// defineProps({
-//   msg: {
-//     type: String,
-//     required: true
-//   }
-// })
-const msg = '你做到了！'
-</script>
-
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -28,6 +17,11 @@ const msg = '你做到了！'
     </div>
   </header>
 </template>
+
+<script setup>
+import { RouterLink } from 'vue-router'
+const msg = '你做到了！'
+</script>
 
 <style scoped>
 header {

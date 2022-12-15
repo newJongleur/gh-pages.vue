@@ -1,6 +1,4 @@
-// import { createRouter, createWebHistory } from 'vue-router'
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router' // history和Hash
 
 const router = createRouter({
   // history: createWebHistory(import.meta.env.BASE_URL), //history 关键字：createWebHistory
@@ -9,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: () => import('../views/HomeView.vue')
     },
     {
       path: '/about',
