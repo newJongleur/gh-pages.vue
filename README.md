@@ -22,7 +22,7 @@ npm run deploy
 ```
 ## 如果发布上去的页面打开时空白，则需要在vue.config.js里加上如下配置，再运行下
 ```javascript
-publicPath:'.'
+base: './',
 ```
 ```sh
 npm run deploy
